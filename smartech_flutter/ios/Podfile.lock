@@ -1,0 +1,146 @@
+PODS:
+  - Firebase/CoreOnly (10.22.0):
+    - FirebaseCore (= 10.22.0)
+  - Firebase/Messaging (10.22.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (~> 10.22.0)
+  - firebase_core (2.27.2):
+    - Firebase/CoreOnly (= 10.22.0)
+    - Flutter
+  - firebase_messaging (14.7.21):
+    - Firebase/Messaging (= 10.22.0)
+    - firebase_core
+    - Flutter
+  - FirebaseCore (10.22.0):
+    - FirebaseCoreInternal (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.12)
+    - GoogleUtilities/Logger (~> 7.12)
+  - FirebaseCoreInternal (10.23.0):
+    - "GoogleUtilities/NSData+zlib (~> 7.8)"
+  - FirebaseInstallations (10.23.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - PromisesObjC (~> 2.1)
+  - FirebaseMessaging (10.22.0):
+    - FirebaseCore (~> 10.0)
+    - FirebaseInstallations (~> 10.0)
+    - GoogleDataTransport (~> 9.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GoogleUtilities/Reachability (~> 7.8)
+    - GoogleUtilities/UserDefaults (~> 7.8)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+  - Flutter (1.0.0)
+  - GoogleDataTransport (9.4.1):
+    - GoogleUtilities/Environment (~> 7.7)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/AppDelegateSwizzler (7.13.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (7.13.0):
+    - GoogleUtilities/Privacy
+    - PromisesObjC (< 3.0, >= 1.2)
+  - GoogleUtilities/Logger (7.13.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (7.13.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (7.13.0)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (7.13.0)
+  - GoogleUtilities/Reachability (7.13.0):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/UserDefaults (7.13.0):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
+  - nanopb (2.30910.0):
+    - nanopb/decode (= 2.30910.0)
+    - nanopb/encode (= 2.30910.0)
+  - nanopb/decode (2.30910.0)
+  - nanopb/encode (2.30910.0)
+  - PromisesObjC (2.4.0)
+  - Smartech-iOS-SDK (3.5.2)
+  - smartech_base (1.0.0):
+    - Flutter
+    - Smartech-iOS-SDK
+  - smartech_nudges (0.0.1):
+    - Flutter
+    - Smartech-iOS-SDK
+    - SmartechNudges (~> 9.0.2)
+  - smartech_push (1.0.0):
+    - Flutter
+    - SmartPush-iOS-SDK
+  - SmartechNudges (9.0.9):
+    - Smartech-iOS-SDK (>= 3.5.1)
+  - SmartPush-iOS-SDK (3.5.0):
+    - Smartech-iOS-SDK (>= 3.5.0)
+
+DEPENDENCIES:
+  - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
+  - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
+  - Flutter (from `Flutter`)
+  - smartech_base (from `.symlinks/plugins/smartech_base/ios`)
+  - smartech_nudges (from `.symlinks/plugins/smartech_nudges/ios`)
+  - smartech_push (from `.symlinks/plugins/smartech_push/ios`)
+  - SmartPush-iOS-SDK
+
+SPEC REPOS:
+  trunk:
+    - Firebase
+    - FirebaseCore
+    - FirebaseCoreInternal
+    - FirebaseInstallations
+    - FirebaseMessaging
+    - GoogleDataTransport
+    - GoogleUtilities
+    - nanopb
+    - PromisesObjC
+    - Smartech-iOS-SDK
+    - SmartechNudges
+    - SmartPush-iOS-SDK
+
+EXTERNAL SOURCES:
+  firebase_core:
+    :path: ".symlinks/plugins/firebase_core/ios"
+  firebase_messaging:
+    :path: ".symlinks/plugins/firebase_messaging/ios"
+  Flutter:
+    :path: Flutter
+  smartech_base:
+    :path: ".symlinks/plugins/smartech_base/ios"
+  smartech_nudges:
+    :path: ".symlinks/plugins/smartech_nudges/ios"
+  smartech_push:
+    :path: ".symlinks/plugins/smartech_push/ios"
+
+SPEC CHECKSUMS:
+  Firebase: 797fd7297b7e1be954432743a0b3f90038e45a71
+  firebase_core: cc49b6648d6dd7570d9273a616cb1205260db91e
+  firebase_messaging: bca531e02d5b4d3ed940f234d4e1b6f970e8278a
+  FirebaseCore: 0326ec9b05fbed8f8716cddbf0e36894a13837f7
+  FirebaseCoreInternal: 6a292e6f0bece1243a737e81556e56e5e19282e3
+  FirebaseInstallations: 42d6ead4605d6eafb3b6683674e80e18eb6f2c35
+  FirebaseMessaging: 9f71037fd9db3376a4caa54e5a3949d1027b4b6e
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
+  GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
+  nanopb: 438bc412db1928dac798aa6fd75726007be04262
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
+  Smartech-iOS-SDK: 675a950ce4e7b19db2fa96b4d99216a453184ce0
+  smartech_base: 9e2fd9e596518cc7ae850752bfc7abbb7539a8b1
+  smartech_nudges: 0c0973951893614c0f08127184003ee1b01ee5d5
+  smartech_push: 264d63abbf0b40ff72ee2dfb24143d4021235b42
+  SmartechNudges: d08490eabb7a7e0972f0d15f5bfc46288071200d
+  SmartPush-iOS-SDK: de27807ef966b919ae237748a0cfadc8243ea9cd
+
+PODFILE CHECKSUM: f7ec0493ed9ac22048fb0229bd9b5665f0fd0f04
+
+COCOAPODS: 1.14.3
