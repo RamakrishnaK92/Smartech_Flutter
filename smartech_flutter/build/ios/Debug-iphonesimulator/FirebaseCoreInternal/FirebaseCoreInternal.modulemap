@@ -7,6 +7,6 @@ module FirebaseCoreInternal {
 
 
 module FirebaseCoreInternal.Swift {
-  header "/Users/ramakrishnakasuba/_Work/Demo Projects RK/SmartechApp-FCM/build/ios/Debug-iphonesimulator/FirebaseCoreInternal/Swift Compatibility Header/FirebaseCoreInternal-Swift.h"
+  header "/Users/ramakrishnakasuba/_GitLocal/Smartech_Flutter/smartech_flutter/build/ios/Debug-iphonesimulator/FirebaseCoreInternal/Swift Compatibility Header/FirebaseCoreInternal-Swift.h"
   requires objc
 }

@@ -6,7 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		zgm5qQX9uR78KO53qqdUZBKT6Lk=
+		ayxuLbQfNpOy5fXEukOxcIqvnSo=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		gfa9unked1iZZfTpmFbx+enfPKo=
 		</data>
 		<key>allPublicViews.json</key>
 		<data>
@@ -195,6 +199,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0qTcoe6eOSDGAyKsVS7byAcGlvgSRbKILrCCe8CWV+w=
+			</data>
+		</dict>
 		<key>allPublicViews.json</key>
 		<dict>
 			<key>hash2</key>

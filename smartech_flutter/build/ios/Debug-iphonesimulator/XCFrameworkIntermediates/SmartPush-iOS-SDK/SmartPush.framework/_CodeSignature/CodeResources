@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		bBBuFsdWxn+j5YXlmAJON7BgcfY=
+		pinKc5LlxOg8gwF8IQRFx3yZukY=
 		</data>
 		<key>Headers/SMTCustomNotificationViewController.h</key>
 		<data>
@@ -26,11 +26,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		usSGf0R7wl2wP4Cc/ViAyabvKGw=
+		itXGk8mPn32OUahgHR7nbiDqb2Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		FKogThQt8WgPKEXCZRj1LRd/I3o=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		n8O+8hG1aWa/PAHE8vaORiUXB84=
 		</data>
 		<key>SMTActionButtonComponent.nib</key>
 		<data>
@@ -142,7 +146,7 @@
 		</data>
 		<key>SmartechPushDB.momd/SmartechPushDB 2.mom</key>
 		<data>
-		kxts8Lxl4XxnLqBHZaYtJqvFkgI=
+		5Auck7C0vyXWaHrh6jEFzW4gNgc=
 		</data>
 		<key>SmartechPushDB.momd/SmartechPushDB 2.omo</key>
 		<data>
@@ -150,11 +154,11 @@
 		</data>
 		<key>SmartechPushDB.momd/SmartechPushDB.mom</key>
 		<data>
-		h99ED1hG5nREIDysOMht6IWBnxQ=
+		bqoHiEd9vIj+RmTnblrXUAfLyoQ=
 		</data>
 		<key>SmartechPushDB.momd/VersionInfo.plist</key>
 		<data>
-		AAmlIsp035NEFn/IBAjC+IprV7Q=
+		z7KLqG3zdj6LYFKRpELt/iSPVt4=
 		</data>
 		<key>SmartechPushSDKConfig.plist</key>
 		<data>
@@ -167,11 +171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bBBuFsdWxn+j5YXlmAJON7BgcfY=
+			pinKc5LlxOg8gwF8IQRFx3yZukY=
 			</data>
 			<key>hash2</key>
 			<data>
-			HLLL+XKZQOJRID/GF6SlopS39vVn35Pxklkf4ZW+8GM=
+			rzw+wQ/ZjGxK+ZXiYF1Wg7aiUMwMyTL1OIrr4cqfwNk=
 			</data>
 		</dict>
 		<key>Headers/SMTCustomNotificationViewController.h</key>
@@ -227,6 +231,17 @@
 			<key>hash2</key>
 			<data>
 			uK1LALcolp2H4QYNblwo65LSJA6x3/YbeoRjCyT73k0=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			n8O+8hG1aWa/PAHE8vaORiUXB84=
+			</data>
+			<key>hash2</key>
+			<data>
+			JMcXhmihxF7xA7CpIdCzD3b5FNZKNGdqwN9Yt1MOwaM=
 			</data>
 		</dict>
 		<key>SMTActionButtonComponent.nib</key>
@@ -530,11 +545,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kxts8Lxl4XxnLqBHZaYtJqvFkgI=
+			5Auck7C0vyXWaHrh6jEFzW4gNgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lhw619MXFgeUosKH0hP5+k0Vq0lQrMZQdA0xt8GT5AM=
+			MlMHQNo6Fu2OcGvMe3gK1SeU7CCt3zb5aFdeHYCwYD4=
 			</data>
 		</dict>
 		<key>SmartechPushDB.momd/SmartechPushDB 2.omo</key>
@@ -552,22 +567,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h99ED1hG5nREIDysOMht6IWBnxQ=
+			bqoHiEd9vIj+RmTnblrXUAfLyoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			r9Fnck/EbtvDBb5OzNUYwVdkllVp33wFHXyUZHt02AY=
+			NtGKtiQZqXyfqg4AhkKi1ridvWoOSCY1fgTilyISaaU=
 			</data>
 		</dict>
 		<key>SmartechPushDB.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AAmlIsp035NEFn/IBAjC+IprV7Q=
+			z7KLqG3zdj6LYFKRpELt/iSPVt4=
 			</data>
 			<key>hash2</key>
 			<data>
-			pJj//x5XCd1g39Cf1mDGOe1WGwZmVJfSYLgzalJ77Lo=
+			7dLQgB7D3sMAwpTyAU65kw/nJaPZNNu2Dx/z5p33DhI=
 			</data>
 		</dict>
 		<key>SmartechPushSDKConfig.plist</key>
