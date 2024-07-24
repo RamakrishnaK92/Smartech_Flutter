@@ -40,7 +40,17 @@ dependencies:
   smartech_base: ^3.5.0
   smartech_push: ^3.5.0
   smartech_nudges: ^1.1.0
-
+  smartech_appinbox: ^3.5.1
+  flutter_html: ^3.0.0-alpha.6
+  fluttertoast:
+  rxdart:
+  just_audio:
+  cached_network_image:
+  url_launcher:
+  chewie:
+  video_player:
+  visibility_detector:
+  custom_pop_up_menu:
 dev_dependencies:
   flutter_test:
     sdk: flutter

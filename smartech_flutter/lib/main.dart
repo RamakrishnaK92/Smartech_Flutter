@@ -5,6 +5,7 @@ import 'package:smartech_nudges/px_widget.dart';
 import 'package:smartech_nudges/tracker/route_obersver.dart';
 import 'firebase_options.dart';
 import 'package:smartech_base/smartech_base.dart';
+import 'package:smartechapp/appinbox.dart';
 
 // Reference iOS: https://firebase.flutter.dev/docs/messaging/notifications/
 
@@ -12,6 +13,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await configureFirebase();
+
+  Smartech().login('testFlutterRam@gmail.com');
   runApp(const MyApp());
 }
 
@@ -81,19 +84,21 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
-  State<StatefulWidget> createState() => _MyHomePageState();
+  // // This widget is the root of your application.
+  // State<StatefulWidget> createState() => _MyAppState();
+
   @override
   Widget build(BuildContext context) {
     return SmartechPxWidget(
       child: MaterialApp(
-        navigatorObservers: [PxNavigationObserver.instance],
+        navigatorObservers: [PxNavigationObserver()],
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
         home: const MyHomePage(title: 'Smartech PN Co-Exist With FCM'),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
@@ -109,8 +114,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // Function to setup notification handling
+
   Future<void> setupNotificationMessageHandling() async {
     // Smartech deeplink callback
+
     Smartech().onHandleDeeplink((String? smtDeeplinkSource,
         String? smtDeeplink,
         Map<dynamic, dynamic>? smtPayload,
@@ -202,6 +209,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SMTAppInboxScreen(),
+                    ));
+              },
+              icon: Icon(Icons.notification_add))
+        ],
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
