@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -123,7 +125,51 @@ class _MyHomePageState extends State<MyHomePage> {
         Map<dynamic, dynamic>? smtPayload,
         Map<dynamic, dynamic>? smtCustomPayload) async {
       print("smtDeeplink value :$smtDeeplink");
-      print("smtCustomPayload value :$smtCustomPayload");
+
+      if (smtDeeplink != null && smtDeeplink.startsWith("arguments=")) {
+        // Extract the JSON-like string parrt
+        String jsonSubstring =
+            smtDeeplink.replaceFirst("arguments=", "").trim();
+
+        // Replace single quotes with double quotes to make it valid JSON
+        // jsonSubstring = jsonSubstring.replaceAll("'", "\"");
+        try {
+          Map<String, dynamic> jsonObject = jsonDecode(jsonSubstring);
+          String jsonString = jsonEncode(jsonObject);
+
+          print(
+              "JSON STRING FROM DEEPLINK: $jsonString\n"); // Output: {"test":"value"}
+        } catch (e) {
+          print('Invalid JSON format: $e');
+        }
+      }
+
+      print("smtCustomPayload value : $smtCustomPayload\n");
+
+      // Simulating received payload as a Map (not a string)
+
+      Map? smtKVP = smtCustomPayload;
+
+      if (smtKVP!.containsKey("arguments")) {
+        // Extract the JSON string part
+        String jsonSubstring = smtKVP["arguments"].toString().trim();
+
+        // Replace single quotes with double quotes to make it valid JSON
+        jsonSubstring = jsonSubstring.replaceAll("'", "\"");
+
+        try {
+          // Decode the corrected JSON string into a Dart Map
+          Map<String, dynamic> jsonObject = jsonDecode(jsonSubstring);
+
+          // Convert back to properly formatted JSON string
+          String jsonString = jsonEncode(jsonObject);
+
+          print("JSON STRING KVP: $jsonString\n"); // Output: {"test":"value"}
+        } catch (e) {
+          print('Invalid JSON format: $e');
+        }
+      }
+
       print("smtDeeplinkSource value :$smtDeeplinkSource");
       print("smtPayload value :$smtPayload");
 
@@ -215,10 +261,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SMTAppInboxScreen(),
+                      builder: (context) => const SMTAppInboxScreen(),
                     ));
               },
-              icon: Icon(Icons.notification_add))
+              icon: const Icon(Icons.notification_add))
         ],
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),

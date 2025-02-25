@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		C0GbzpvoI6VcWZTM3ubQMX/hLYE=
+		0SNNuf+H8F0bQ5d3jPp8q80MSD4=
 		</data>
 		<key>Headers/HanselProtocol.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/SMTBackendConfiguration.h</key>
 		<data>
-		zx+8XF94nRKps4xKAzjp8PXF+FQ=
+		CFd9QXp5TWHU5n/k1VembnspjgE=
 		</data>
 		<key>Headers/SMTBackendService.h</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Headers/Smartech.h</key>
 		<data>
-		Hodm8SGQ5tGCKn+fCqiuK9WSs0c=
+		fRCV0Z+//cSA2Sr4AAtdLAoE+WA=
 		</data>
 		<key>Headers/SmartechAdapter.h</key>
 		<data>
-		rI6N5Twtbukx5PXZ74J40FGzpcY=
+		H3fjwqiPqSHUSQlCSc2ucVm8FSE=
 		</data>
 		<key>Headers/SmartechProtocol.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7p0T169EWm69CcfBnv2vrI1Pf58=
+		nHRrNcUtYiEcnyRyrxOPCagMVMY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,35 +94,39 @@
 		</data>
 		<key>SmartechDB.momd/SmartechDB 2.mom</key>
 		<data>
-		+MtkYpSUPjLzBpg+JcC6w1U54W4=
+		LaSOsDLi5DnsM4fbeJ3QWLYEaGs=
 		</data>
 		<key>SmartechDB.momd/SmartechDB 3.mom</key>
 		<data>
-		G/prinEmIHiDr+47bzAPtgd0hcs=
+		DQdCcQqRmTr5l2aVrOEmDwxPBF0=
 		</data>
 		<key>SmartechDB.momd/SmartechDB 4.mom</key>
 		<data>
-		G/prinEmIHiDr+47bzAPtgd0hcs=
+		DQdCcQqRmTr5l2aVrOEmDwxPBF0=
 		</data>
 		<key>SmartechDB.momd/SmartechDB 5.mom</key>
 		<data>
-		k9ETBMb8m3esfc+CFelS7JGapj0=
+		5HaEou2XPc70a+2N1O7lNd8E2cg=
 		</data>
 		<key>SmartechDB.momd/SmartechDB 6.mom</key>
 		<data>
-		9/04ScCdsXcHzXvbhsejplLAw9U=
+		pINwR18sCsZ1k4sw1FI8AGhbfak=
 		</data>
-		<key>SmartechDB.momd/SmartechDB 6.omo</key>
+		<key>SmartechDB.momd/SmartechDB 7.mom</key>
 		<data>
-		lQ/KDXKSxfdBz8EgN08vqdez6WY=
+		2cYofMehGyX3xjwNFlKsy4Oe1hQ=
+		</data>
+		<key>SmartechDB.momd/SmartechDB 7.omo</key>
+		<data>
+		FYGq3Ez6xsYbBpYenL0kngsnbE8=
 		</data>
 		<key>SmartechDB.momd/SmartechDB.mom</key>
 		<data>
-		axen/iOZLcIse38xpAgw2neLH/w=
+		wLZx4bgaEbElwc8HOwIQCs1IUYU=
 		</data>
 		<key>SmartechDB.momd/VersionInfo.plist</key>
 		<data>
-		LqXeM0xxxNoYywJHtiSqe1L9RIQ=
+		5Btjb/LKOKP/Tl20B/50AciuFfE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,11 +135,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			C0GbzpvoI6VcWZTM3ubQMX/hLYE=
+			0SNNuf+H8F0bQ5d3jPp8q80MSD4=
 			</data>
 			<key>hash2</key>
 			<data>
-			jPZ3+2JUu5cxnhT70M/0Anuo2V/IMA4jPKOgsbuIxms=
+			sIUWWim5FPn/LxMrfkgnGL+A9O4G0sKWVOne5x8Mn+Q=
 			</data>
 		</dict>
 		<key>Headers/HanselProtocol.h</key>
@@ -197,11 +201,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zx+8XF94nRKps4xKAzjp8PXF+FQ=
+			CFd9QXp5TWHU5n/k1VembnspjgE=
 			</data>
 			<key>hash2</key>
 			<data>
-			/3ASRtiokqx/O+gB7QI5fouzbKqIxtXA/dHxByNrlUE=
+			yvGt7/H0plZzeL+agWBwFRGA2jw9jT8NYg2Yt8dzotg=
 			</data>
 		</dict>
 		<key>Headers/SMTBackendService.h</key>
@@ -296,22 +300,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hodm8SGQ5tGCKn+fCqiuK9WSs0c=
+			fRCV0Z+//cSA2Sr4AAtdLAoE+WA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jt0fqTsdoxTZTjEmkCrQxv0KTgIa5/DHlqkan5sFRdI=
+			9tFCGnrn89uyivnER6CyUu6enYqmpqlQDrS5HvpKGlA=
 			</data>
 		</dict>
 		<key>Headers/SmartechAdapter.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rI6N5Twtbukx5PXZ74J40FGzpcY=
+			H3fjwqiPqSHUSQlCSc2ucVm8FSE=
 			</data>
 			<key>hash2</key>
 			<data>
-			6coxgI/jzt8vVCBASbmb6iMcIh+Y4CX6SqTEndenl84=
+			XvUr41xkRyYbmeHg+nHs4t+sOKl06zgguKPZ1ccmdGc=
 			</data>
 		</dict>
 		<key>Headers/SmartechProtocol.h</key>
@@ -362,88 +366,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+MtkYpSUPjLzBpg+JcC6w1U54W4=
+			LaSOsDLi5DnsM4fbeJ3QWLYEaGs=
 			</data>
 			<key>hash2</key>
 			<data>
-			CtLBUYtehu9QZWyXWYQCGUDPXUvAsSpAnuF8QLpHnmM=
+			IQjiKz+dQx1Rs6Ps2mfIHBRuawvlvYunt89aJwAjDGw=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/SmartechDB 3.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G/prinEmIHiDr+47bzAPtgd0hcs=
+			DQdCcQqRmTr5l2aVrOEmDwxPBF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZkHOR6pzEqqW5FKUJuJRpKBvKsANskCNJV4kEjRiZPQ=
+			AtAZH5DdtjLrk08eveXoigZCzgAyJ1y3XOAwB0/2oqk=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/SmartechDB 4.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G/prinEmIHiDr+47bzAPtgd0hcs=
+			DQdCcQqRmTr5l2aVrOEmDwxPBF0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZkHOR6pzEqqW5FKUJuJRpKBvKsANskCNJV4kEjRiZPQ=
+			AtAZH5DdtjLrk08eveXoigZCzgAyJ1y3XOAwB0/2oqk=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/SmartechDB 5.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k9ETBMb8m3esfc+CFelS7JGapj0=
+			5HaEou2XPc70a+2N1O7lNd8E2cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			AH5bFlKd0Lf/Uq5Yn790ZHd8mKe37X+aZCIad+hXnSE=
+			IaUwEBXYebZ7GQsW3B1gJ8Nk0+D5sKecI+viDnY0pew=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/SmartechDB 6.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9/04ScCdsXcHzXvbhsejplLAw9U=
+			pINwR18sCsZ1k4sw1FI8AGhbfak=
 			</data>
 			<key>hash2</key>
 			<data>
-			g2dd8nMmeZNoCdnv2nEU6MQ9ceWtpi+rV4jJvDme1QY=
+			yC9vzsWwZxYHvkqahW+CwXhhlKMTETYwxibULzUXfpE=
 			</data>
 		</dict>
-		<key>SmartechDB.momd/SmartechDB 6.omo</key>
+		<key>SmartechDB.momd/SmartechDB 7.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lQ/KDXKSxfdBz8EgN08vqdez6WY=
+			2cYofMehGyX3xjwNFlKsy4Oe1hQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+g9df3eUG0p40BTYaC8bKtsgqZvO4x0voECFH5cqWnM=
+			BxRXhInfsQAZZIqBxaVJFdJ4kY20sG1aeeA7WYK82Mo=
+			</data>
+		</dict>
+		<key>SmartechDB.momd/SmartechDB 7.omo</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FYGq3Ez6xsYbBpYenL0kngsnbE8=
+			</data>
+			<key>hash2</key>
+			<data>
+			NCga9POCd7Ll8uuB/ktQwOn4hleyckaQjVopYGKVH1c=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/SmartechDB.mom</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			axen/iOZLcIse38xpAgw2neLH/w=
+			wLZx4bgaEbElwc8HOwIQCs1IUYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZLzVmaP4WTJkoocBhPv4MBvk9+C664fq/aB7vZMNBo0=
+			oHXoKFlcQLJmli5MZG0p3I5OQCUNVJlxWHNYKodCpXM=
 			</data>
 		</dict>
 		<key>SmartechDB.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LqXeM0xxxNoYywJHtiSqe1L9RIQ=
+			5Btjb/LKOKP/Tl20B/50AciuFfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			rlcsK3/34C9fBIjZKzH1Afv8ADWeGMzYdcD+YcGz+QQ=
+			DsTOIHkR4WrGbe8CaBt9gOmYQBooP0uJCDlYzA/pvm8=
 			</data>
 		</dict>
 	</dict>

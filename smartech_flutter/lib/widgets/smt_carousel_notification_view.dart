@@ -4,8 +4,7 @@ import 'package:smartech_appinbox/model/smt_appinbox_model.dart';
 
 class SMTCarouselNotificationView extends StatefulWidget {
   final SMTAppInboxMessage inbox;
-  const SMTCarouselNotificationView({Key? key, required this.inbox})
-      : super(key: key);
+  const SMTCarouselNotificationView({super.key, required this.inbox});
 
   @override
   State<SMTCarouselNotificationView> createState() =>
@@ -28,7 +27,7 @@ class _SMTCarouselNotificationViewState
     return Card(
       elevation: 4,
       child: Padding(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -36,24 +35,24 @@ class _SMTCarouselNotificationViewState
               alignment: Alignment.centerRight,
               child: Text(
                 widget.inbox.publishedDate!.getTimeAndDayCount(),
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 12,
                     color: AppColor.greyColorText,
                     fontWeight: FontWeight.w400),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             htmlText(widget.inbox.title),
             if (widget.inbox.subtitle.toString() != "")
               htmlText(widget.inbox.subtitle),
             htmlText(widget.inbox.body),
-            SizedBox(
+            const SizedBox(
               height: 16,
             ),
             Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-              Container(
+              SizedBox(
                 height: 175,
                 child: PageView.builder(
                     itemCount: widget.inbox.carousel.length,
@@ -87,7 +86,7 @@ class _SMTCarouselNotificationViewState
                                     },
                                     child: Container(
                                       color: Colors.white.withOpacity(0.6),
-                                      child: Padding(
+                                      child: const Padding(
                                         padding: EdgeInsets.all(8.0),
                                         child: Icon(
                                           Icons.arrow_back_ios_rounded,
@@ -103,12 +102,13 @@ class _SMTCarouselNotificationViewState
                                   child: InkWell(
                                     onTap: () {
                                       if (index !=
-                                          widget.inbox.carousel.length - 1)
+                                          widget.inbox.carousel.length - 1) {
                                         _pageController.jumpToPage(index + 1);
+                                      }
                                     },
                                     child: Container(
                                       color: Colors.white.withOpacity(0.6),
-                                      child: Padding(
+                                      child: const Padding(
                                         padding: EdgeInsets.all(8.0),
                                         child: Icon(
                                           Icons.arrow_forward_ios_rounded,
@@ -120,23 +120,23 @@ class _SMTCarouselNotificationViewState
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Text(
-                              '${widget.inbox.carousel[index].imgTitle.toString()}',
-                              style: TextStyle(
+                              widget.inbox.carousel[index].imgTitle.toString(),
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w700,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 4,
                             ),
                             Text(
-                              '${widget.inbox.carousel[index].imgMsg.toString()}',
-                              style: TextStyle(
+                              widget.inbox.carousel[index].imgMsg.toString(),
+                              style: const TextStyle(
                                 color: AppColor.greyColorText,
                                 fontSize: 12.0,
                                 fontWeight: FontWeight.w600,

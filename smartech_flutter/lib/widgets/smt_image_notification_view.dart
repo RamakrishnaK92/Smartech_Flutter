@@ -8,10 +8,11 @@ import 'package:url_launcher/url_launcher.dart';
 
 class SMTImageNotificationView extends StatefulWidget {
   final SMTAppInboxMessage inbox;
-  const SMTImageNotificationView({Key? key, required this.inbox}) : super(key: key);
+  const SMTImageNotificationView({super.key, required this.inbox});
 
   @override
-  State<SMTImageNotificationView> createState() => _SMTImageNotificationViewState();
+  State<SMTImageNotificationView> createState() =>
+      _SMTImageNotificationViewState();
 }
 
 class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
@@ -28,7 +29,7 @@ class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.all(12),
+            padding: const EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -36,25 +37,29 @@ class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
                   alignment: Alignment.centerRight,
                   child: Text(
                     widget.inbox.publishedDate!.getTimeAndDayCount(),
-                    style: TextStyle(fontSize: 12, color: AppColor.greyColorText, fontWeight: FontWeight.w400),
+                    style: const TextStyle(
+                        fontSize: 12,
+                        color: AppColor.greyColorText,
+                        fontWeight: FontWeight.w400),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 htmlText(widget.inbox.title),
-                if (widget.inbox.subtitle.toString() != "") htmlText(widget.inbox.subtitle),
+                if (widget.inbox.subtitle.toString() != "")
+                  htmlText(widget.inbox.subtitle),
                 htmlText(widget.inbox.body),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 Center(
-                  child: Container(
+                  child: SizedBox(
                     width: MediaQuery.of(context).size.width - 26,
                     // height: 162,
                     child: CachedNetworkImage(
                       fit: BoxFit.cover,
-                      placeholder: (context, url) => Center(
+                      placeholder: (context, url) => const Center(
                         child: CupertinoActivityIndicator(),
                       ),
                       imageUrl: widget.inbox.mediaUrl != ""
@@ -66,10 +71,10 @@ class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
               ],
             ),
           ),
-          widget.inbox.actionButton.length > 0
+          widget.inbox.actionButton.isNotEmpty
               ? Container(
-                  padding: EdgeInsets.only(top: 16, bottom: 16),
-                  color: Color.fromRGBO(247, 247, 247, 1),
+                  padding: const EdgeInsets.only(top: 16, bottom: 16),
+                  color: const Color.fromRGBO(247, 247, 247, 1),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,10 +87,14 @@ class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
                                       onTap: () async {
                                         if (e.actionDeeplink.contains("http")) {
                                           print("navigate to browser with url");
-                                          final Uri _url = Uri.parse(e.actionDeeplink);
-                                          if (!await launchUrl(_url)) throw 'Could not launch $_url';
+                                          final Uri url =
+                                              Uri.parse(e.actionDeeplink);
+                                          if (!await launchUrl(url)) {
+                                            throw 'Could not launch $url';
+                                          }
                                           // await FlutterWebBrowser.openWebPage(url: e.actionDeeplink);
-                                        } else if (e.actionDeeplink.contains("smartechflutter://profile")) {
+                                        } else if (e.actionDeeplink.contains(
+                                            "smartechflutter://profile")) {
                                           // NavigationUtilities.pushRoute(UpdateProfile.route);
                                         } else {
                                           // Map<String, dynamic> dict = HashMap();
@@ -99,41 +108,60 @@ class _SMTImageNotificationViewState extends State<SMTImageNotificationView> {
                                       },
                                       child: Text(
                                         e.actionName.toString(),
-                                        style: TextStyle(color: Color.fromRGBO(75, 79, 81, 1), fontSize: 14, fontWeight: FontWeight.w500),
+                                        style: const TextStyle(
+                                            color:
+                                                Color.fromRGBO(75, 79, 81, 1),
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w500),
                                       ),
                                     )
                                   : e.aTyp == 2
                                       ? InkWell(
                                           onTap: () async {
                                             print("navigation called");
-                                            Clipboard.setData(ClipboardData(text: e.configCtxt)).then((result) {
-                                              final snackBar = SnackBar(
+                                            Clipboard.setData(ClipboardData(
+                                                    text: e.configCtxt))
+                                                .then((result) {
+                                              const snackBar = SnackBar(
                                                 content: Text('Copied'),
-                                                duration: Duration(milliseconds: 500),
+                                                duration:
+                                                    Duration(milliseconds: 500),
                                               );
-                                              ScaffoldMessenger.of(context).showSnackBar(snackBar); // -> show a notification
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                      snackBar); // -> show a notification
                                             });
-                                            if (e.actionDeeplink.contains("http")) {
-                                              print("navigate to browser with url");
-                                              final Uri _url = Uri.parse(e.actionDeeplink);
-                                              if (!await launchUrl(_url)) throw 'Could not launch $_url';
+                                            if (e.actionDeeplink
+                                                .contains("http")) {
+                                              print(
+                                                  "navigate to browser with url");
+                                              final Uri url =
+                                                  Uri.parse(e.actionDeeplink);
+                                              if (!await launchUrl(url)) {
+                                                throw 'Could not launch $url';
+                                              }
                                               // await FlutterWebBrowser.openWebPage(url: e.actionDeeplink);
-                                            } else if (e.actionDeeplink.contains("smartechflutter://profile")) {
+                                            } else if (e.actionDeeplink.contains(
+                                                "smartechflutter://profile")) {
                                               // NavigationUtilities.pushRoute(UpdateProfile.route);
                                             }
                                           },
                                           child: Text(
                                             e.actionName.toString(),
-                                            style: TextStyle(color: Color.fromRGBO(75, 79, 81, 1), fontSize: 14, fontWeight: FontWeight.w500),
+                                            style: const TextStyle(
+                                                color: Color.fromRGBO(
+                                                    75, 79, 81, 1),
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w500),
                                           ),
                                         )
-                                      : SizedBox(
+                                      : const SizedBox(
                                           height: 0,
                                         )));
                     }).toList(),
                   ),
                 )
-              : SizedBox(
+              : const SizedBox(
                   height: 0,
                 ),
         ],

@@ -26,11 +26,11 @@ Widget htmlText(String title) {
     children: [
       Html(
         data: title,
-        style: {
+        style: const {
           // "body": Style(margin: Margins.zero, padding: HtmlPaddings.zero)
         },
       ),
-      SizedBox(
+      const SizedBox(
         height: 4,
       ),
     ],

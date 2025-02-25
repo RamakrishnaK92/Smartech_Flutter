@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSDate *ttlDate;
 @property (nullable, nonatomic, copy) NSString *categoryName;
 @property (nullable, nonatomic, copy) NSString *timestamp;
-
+@property (nullable, nonatomic, copy) NSString *userIdentity;
 
 /**
  @brief This method is called to check if the media download is in progress.

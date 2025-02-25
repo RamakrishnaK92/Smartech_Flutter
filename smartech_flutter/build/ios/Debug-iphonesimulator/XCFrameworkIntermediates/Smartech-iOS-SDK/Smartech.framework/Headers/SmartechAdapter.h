@@ -80,6 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)trackAppLaunchEvents;
 
+- (void)updateUserProfile:(NSDictionary *)payloadDictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END

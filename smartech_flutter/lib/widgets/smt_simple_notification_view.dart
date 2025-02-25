@@ -6,8 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class SMTSimpleNotificationView extends StatelessWidget {
   final SMTAppInboxMessage inbox;
-  const SMTSimpleNotificationView({Key? key, required this.inbox})
-      : super(key: key);
+  const SMTSimpleNotificationView({super.key, required this.inbox});
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -15,7 +14,7 @@ class SMTSimpleNotificationView extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(12),
+            padding: const EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -23,7 +22,7 @@ class SMTSimpleNotificationView extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   child: Text(
                     inbox.publishedDate!.getTimeAndDayCount(),
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 12,
                         color: AppColor.greyColorText,
                         fontWeight: FontWeight.w400),
@@ -35,10 +34,10 @@ class SMTSimpleNotificationView extends StatelessWidget {
               ],
             ),
           ),
-          inbox.actionButton.length > 0
+          inbox.actionButton.isNotEmpty
               ? Container(
-                  padding: EdgeInsets.only(top: 16, bottom: 16),
-                  color: Color.fromRGBO(247, 247, 247, 1),
+                  padding: const EdgeInsets.only(top: 16, bottom: 16),
+                  color: const Color.fromRGBO(247, 247, 247, 1),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -51,10 +50,11 @@ class SMTSimpleNotificationView extends StatelessWidget {
                                       onTap: () async {
                                         if (e.actionDeeplink.contains("http")) {
                                           print("navigate to browser with url");
-                                          final Uri _url =
+                                          final Uri url =
                                               Uri.parse(e.actionDeeplink);
-                                          if (!await launchUrl(_url))
-                                            throw 'Could not launch $_url';
+                                          if (!await launchUrl(url)) {
+                                            throw 'Could not launch $url';
+                                          }
                                           // await FlutterWebBrowser.openWebPage(url: e.actionDeeplink);
                                         } else if (e.actionDeeplink.contains(
                                             "smartechflutter://profile")) {
@@ -71,7 +71,7 @@ class SMTSimpleNotificationView extends StatelessWidget {
                                       },
                                       child: Text(
                                         e.actionName.toString(),
-                                        style: TextStyle(
+                                        style: const TextStyle(
                                             color:
                                                 Color.fromRGBO(75, 79, 81, 1),
                                             fontSize: 14,
@@ -85,7 +85,7 @@ class SMTSimpleNotificationView extends StatelessWidget {
                                             Clipboard.setData(ClipboardData(
                                                     text: e.configCtxt))
                                                 .then((result) {
-                                              final snackBar = SnackBar(
+                                              const snackBar = SnackBar(
                                                 content: Text('Copied'),
                                                 duration:
                                                     Duration(milliseconds: 500),
@@ -98,10 +98,11 @@ class SMTSimpleNotificationView extends StatelessWidget {
                                                 .contains("https")) {
                                               print(
                                                   "navigate to browser with url");
-                                              final Uri _url =
+                                              final Uri url =
                                                   Uri.parse(e.actionDeeplink);
-                                              if (!await launchUrl(_url))
-                                                throw 'Could not launch $_url';
+                                              if (!await launchUrl(url)) {
+                                                throw 'Could not launch $url';
+                                              }
                                               // await FlutterWebBrowser.openWebPage(url: e.actionDeeplink);
                                             } else if (e.actionDeeplink.contains(
                                                 "smartechflutter://profile")) {
@@ -110,20 +111,20 @@ class SMTSimpleNotificationView extends StatelessWidget {
                                           },
                                           child: Text(
                                             e.actionName.toString(),
-                                            style: TextStyle(
+                                            style: const TextStyle(
                                                 color: Color.fromRGBO(
                                                     75, 79, 81, 1),
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.w500),
                                           ),
                                         )
-                                      : SizedBox(
+                                      : const SizedBox(
                                           height: 0,
                                         )));
                     }).toList(),
                   ),
                 )
-              : SizedBox(
+              : const SizedBox(
                   height: 0,
                 ),
         ],

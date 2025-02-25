@@ -1,85 +1,85 @@
 PODS:
+  - app_links (0.0.2):
+    - Flutter
   - audio_session (0.0.1):
     - Flutter
-  - Firebase/CoreOnly (10.25.0):
-    - FirebaseCore (= 10.25.0)
-  - Firebase/Messaging (10.25.0):
+  - Firebase/CoreOnly (11.8.0):
+    - FirebaseCore (~> 11.8.0)
+  - Firebase/Messaging (11.8.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 10.25.0)
-  - firebase_core (2.32.0):
-    - Firebase/CoreOnly (= 10.25.0)
+    - FirebaseMessaging (~> 11.8.0)
+  - firebase_core (3.12.0):
+    - Firebase/CoreOnly (= 11.8.0)
     - Flutter
-  - firebase_messaging (14.9.4):
-    - Firebase/Messaging (= 10.25.0)
+  - firebase_messaging (15.2.3):
+    - Firebase/Messaging (= 11.8.0)
     - firebase_core
     - Flutter
-  - FirebaseCore (10.25.0):
-    - FirebaseCoreInternal (~> 10.0)
-    - GoogleUtilities/Environment (~> 7.12)
-    - GoogleUtilities/Logger (~> 7.12)
-  - FirebaseCoreInternal (10.29.0):
-    - "GoogleUtilities/NSData+zlib (~> 7.8)"
-  - FirebaseInstallations (10.29.0):
-    - FirebaseCore (~> 10.0)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/UserDefaults (~> 7.8)
-    - PromisesObjC (~> 2.1)
-  - FirebaseMessaging (10.25.0):
-    - FirebaseCore (~> 10.0)
-    - FirebaseInstallations (~> 10.0)
-    - GoogleDataTransport (~> 9.3)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
-    - GoogleUtilities/Environment (~> 7.8)
-    - GoogleUtilities/Reachability (~> 7.8)
-    - GoogleUtilities/UserDefaults (~> 7.8)
-    - nanopb (< 2.30911.0, >= 2.30908.0)
+  - FirebaseCore (11.8.1):
+    - FirebaseCoreInternal (~> 11.8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Logger (~> 8.0)
+  - FirebaseCoreInternal (11.8.0):
+    - "GoogleUtilities/NSData+zlib (~> 8.0)"
+  - FirebaseInstallations (11.8.0):
+    - FirebaseCore (~> 11.8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
+    - PromisesObjC (~> 2.4)
+  - FirebaseMessaging (11.8.0):
+    - FirebaseCore (~> 11.8.0)
+    - FirebaseInstallations (~> 11.0)
+    - GoogleDataTransport (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 8.0)
+    - GoogleUtilities/Environment (~> 8.0)
+    - GoogleUtilities/Reachability (~> 8.0)
+    - GoogleUtilities/UserDefaults (~> 8.0)
+    - nanopb (~> 3.30910.0)
   - Flutter (1.0.0)
   - fluttertoast (0.0.2):
     - Flutter
-    - Toast
-  - GoogleDataTransport (9.4.1):
-    - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30911.0, >= 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/AppDelegateSwizzler (7.13.3):
+  - GoogleDataTransport (10.1.0):
+    - nanopb (~> 3.30910.0)
+    - PromisesObjC (~> 2.4)
+  - GoogleUtilities/AppDelegateSwizzler (8.0.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Environment (7.13.3):
+  - GoogleUtilities/Environment (8.0.2):
     - GoogleUtilities/Privacy
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.13.3):
+  - GoogleUtilities/Logger (8.0.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Network (7.13.3):
+  - GoogleUtilities/Network (8.0.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.13.3)":
+  - "GoogleUtilities/NSData+zlib (8.0.2)":
     - GoogleUtilities/Privacy
-  - GoogleUtilities/Privacy (7.13.3)
-  - GoogleUtilities/Reachability (7.13.3):
+  - GoogleUtilities/Privacy (8.0.2)
+  - GoogleUtilities/Reachability (8.0.2):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
-  - GoogleUtilities/UserDefaults (7.13.3):
+  - GoogleUtilities/UserDefaults (8.0.2):
     - GoogleUtilities/Logger
     - GoogleUtilities/Privacy
   - just_audio (0.0.1):
     - Flutter
-  - nanopb (2.30910.0):
-    - nanopb/decode (= 2.30910.0)
-    - nanopb/encode (= 2.30910.0)
-  - nanopb/decode (2.30910.0)
-  - nanopb/encode (2.30910.0)
+    - FlutterMacOS
+  - nanopb (3.30910.0):
+    - nanopb/decode (= 3.30910.0)
+    - nanopb/encode (= 3.30910.0)
+  - nanopb/decode (3.30910.0)
+  - nanopb/encode (3.30910.0)
   - package_info_plus (0.4.5):
     - Flutter
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
   - PromisesObjC (2.4.0)
-  - Smartech-iOS-SDK (3.5.3)
+  - Smartech-iOS-SDK (3.6.0)
   - smartech_appinbox (1.0.0):
     - Flutter
     - Smartech-iOS-SDK
@@ -90,19 +90,18 @@ PODS:
   - smartech_nudges (0.0.1):
     - Flutter
     - Smartech-iOS-SDK
-    - SmartechNudges (~> 9.0.2)
+    - SmartechNudges
   - smartech_push (1.0.0):
     - Flutter
     - SmartPush-iOS-SDK
-  - SmartechAppInbox-iOS-SDK (3.5.2)
-  - SmartechNudges (9.0.12):
-    - Smartech-iOS-SDK (>= 3.5.3)
-  - SmartPush-iOS-SDK (3.5.1):
-    - Smartech-iOS-SDK (>= 3.5.3)
-  - sqflite (0.0.3):
+  - SmartechAppInbox-iOS-SDK (3.5.6)
+  - SmartechNudges (9.0.17):
+    - Smartech-iOS-SDK (>= 3.6.0)
+  - SmartPush-iOS-SDK (3.5.5):
+    - Smartech-iOS-SDK (>= 3.5.5)
+  - sqflite_darwin (0.0.4):
     - Flutter
     - FlutterMacOS
-  - Toast (4.1.1)
   - url_launcher_ios (0.0.1):
     - Flutter
   - video_player_avfoundation (0.0.1):
@@ -112,12 +111,13 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - app_links (from `.symlinks/plugins/app_links/ios`)
   - audio_session (from `.symlinks/plugins/audio_session/ios`)
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - Flutter (from `Flutter`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
-  - just_audio (from `.symlinks/plugins/just_audio/ios`)
+  - just_audio (from `.symlinks/plugins/just_audio/darwin`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - smartech_appinbox (from `.symlinks/plugins/smartech_appinbox/ios`)
@@ -125,7 +125,7 @@ DEPENDENCIES:
   - smartech_nudges (from `.symlinks/plugins/smartech_nudges/ios`)
   - smartech_push (from `.symlinks/plugins/smartech_push/ios`)
   - SmartPush-iOS-SDK
-  - sqflite (from `.symlinks/plugins/sqflite/darwin`)
+  - sqflite_darwin (from `.symlinks/plugins/sqflite_darwin/darwin`)
   - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
   - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
   - wakelock_plus (from `.symlinks/plugins/wakelock_plus/ios`)
@@ -145,9 +145,10 @@ SPEC REPOS:
     - SmartechAppInbox-iOS-SDK
     - SmartechNudges
     - SmartPush-iOS-SDK
-    - Toast
 
 EXTERNAL SOURCES:
+  app_links:
+    :path: ".symlinks/plugins/app_links/ios"
   audio_session:
     :path: ".symlinks/plugins/audio_session/ios"
   firebase_core:
@@ -159,7 +160,7 @@ EXTERNAL SOURCES:
   fluttertoast:
     :path: ".symlinks/plugins/fluttertoast/ios"
   just_audio:
-    :path: ".symlinks/plugins/just_audio/ios"
+    :path: ".symlinks/plugins/just_audio/darwin"
   package_info_plus:
     :path: ".symlinks/plugins/package_info_plus/ios"
   path_provider_foundation:
@@ -172,8 +173,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/smartech_nudges/ios"
   smartech_push:
     :path: ".symlinks/plugins/smartech_push/ios"
-  sqflite:
-    :path: ".symlinks/plugins/sqflite/darwin"
+  sqflite_darwin:
+    :path: ".symlinks/plugins/sqflite_darwin/darwin"
   url_launcher_ios:
     :path: ".symlinks/plugins/url_launcher_ios/ios"
   video_player_avfoundation:
@@ -182,37 +183,37 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/wakelock_plus/ios"
 
 SPEC CHECKSUMS:
-  audio_session: 088d2483ebd1dc43f51d253d4a1c517d9a2e7207
-  Firebase: 0312a2352584f782ea56f66d91606891d4607f06
-  firebase_core: a626d00494efa398e7c54f25f1454a64c8abf197
-  firebase_messaging: 06391e8f35dc65a00c56580266285263d2861f10
-  FirebaseCore: 7ec4d0484817f12c3373955bc87762d96842d483
-  FirebaseCoreInternal: df84dd300b561c27d5571684f389bf60b0a5c934
-  FirebaseInstallations: 913cf60d0400ebd5d6b63a28b290372ab44590dd
-  FirebaseMessaging: 88950ba9485052891ebe26f6c43a52bb62248952
+  app_links: f3e17e4ee5e357b39d8b95290a9b2c299fca71c6
+  audio_session: 19e9480dbdd4e5f6c4543826b2e8b0e4ab6145fe
+  Firebase: d80354ed7f6df5f9aca55e9eb47cc4b634735eaf
+  firebase_core: 6e223dfa350b2edceb729cea505eaaef59330682
+  firebase_messaging: 07fde77ae28c08616a1d4d870450efc2b38cf40d
+  FirebaseCore: 99fe0c4b44a39f37d99e6404e02009d2db5d718d
+  FirebaseCoreInternal: df24ce5af28864660ecbd13596fc8dd3a8c34629
+  FirebaseInstallations: 6c963bd2a86aca0481eef4f48f5a4df783ae5917
+  FirebaseMessaging: 487b634ccdf6f7b7ff180fdcb2a9935490f764e8
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  fluttertoast: e9a18c7be5413da53898f660530c56f35edfba9c
-  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
-  GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
-  just_audio: baa7252489dbcf47a4c7cc9ca663e9661c99aafa
-  nanopb: 438bc412db1928dac798aa6fd75726007be04262
-  package_info_plus: 58f0028419748fad15bf008b270aaa8e54380b1c
+  fluttertoast: 21eecd6935e7064cc1fcb733a4c5a428f3f24f0f
+  GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
+  GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
+  just_audio: a42c63806f16995daf5b219ae1d679deb76e6a79
+  nanopb: fad817b59e0457d11a5dfbde799381cd727c1275
+  package_info_plus: c0502532a26c7662a62a356cebe2692ec5fe4ec4
   path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
-  Smartech-iOS-SDK: 81069bfc22656c182d2f8deeb89b49534754e373
+  Smartech-iOS-SDK: 2f13b6fbced8371c1e109147307838896c445c03
   smartech_appinbox: 3532f82f5b48ef368428384fdb394e16b2d015a3
   smartech_base: 9e2fd9e596518cc7ae850752bfc7abbb7539a8b1
-  smartech_nudges: 0c0973951893614c0f08127184003ee1b01ee5d5
+  smartech_nudges: 3b77360b6fa0d676ebf79defe696bab9cc112bfb
   smartech_push: 264d63abbf0b40ff72ee2dfb24143d4021235b42
-  SmartechAppInbox-iOS-SDK: c3ea0f114c8e49cd3d16934b48d26bbb46a232d6
-  SmartechNudges: 03e72cec8b22e8333b567a91271c15a94bf20c2a
-  SmartPush-iOS-SDK: a3a49936fd6936dfa361a822d43e35525b799434
-  sqflite: 673a0e54cc04b7d6dba8d24fb8095b31c3a99eec
-  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
+  SmartechAppInbox-iOS-SDK: 41f1c06b6d36f427d78dfce1192c6db317f57d1c
+  SmartechNudges: dbcd6a5917fbcb2ae2cda4de331c71e0c421a0c4
+  SmartPush-iOS-SDK: e5f21bbd7aae14a7e49e03bf1223220146bf3fa6
+  sqflite_darwin: 5a7236e3b501866c1c9befc6771dfd73ffb8702d
   url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
   video_player_avfoundation: 7c6c11d8470e1675df7397027218274b6d2360b3
-  wakelock_plus: 78ec7c5b202cab7761af8e2b2b3d0671be6c4ae1
+  wakelock_plus: 373cfe59b235a6dd5837d0fb88791d2f13a90d56
 
-PODFILE CHECKSUM: f7ec0493ed9ac22048fb0229bd9b5665f0fd0f04
+PODFILE CHECKSUM: 60bf7d973095b2226bd013b2e96b47c80c727e79
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

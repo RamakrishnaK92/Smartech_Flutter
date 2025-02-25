@@ -169,10 +169,6 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
         actions: inboxList.isNotEmpty
             ? [
                 CustomPopupMenu(
-                  child: Container(
-                    padding: const EdgeInsets.all(20),
-                    child: const Icon(Icons.menu, color: Colors.black),
-                  ),
                   menuBuilder: () => CategoryListWidget(
                     categoryList,
                     (selectedList) {
@@ -186,6 +182,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                   pressType: PressType.singleClick,
                   verticalMargin: -10,
                   controller: _controller,
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    child: const Icon(Icons.menu, color: Colors.black),
+                  ),
                 ),
               ]
             : [],
@@ -251,10 +251,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete_outline,
                                         color: AppColor.greyColorText,
@@ -301,10 +301,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete,
                                         color: AppColor.greyColorText,
@@ -351,10 +351,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete,
                                         color: AppColor.greyColorText,
@@ -402,10 +402,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete,
                                         color: AppColor.greyColorText,
@@ -452,10 +452,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete,
                                         color: AppColor.greyColorText,
@@ -503,10 +503,10 @@ class _SMTAppInboxScreenState extends State<SMTAppInboxScreen> {
                                   await getCategoryList();
                                   setState(() {});
                                 },
-                                background: Align(
+                                background: const Align(
                                     alignment: Alignment.centerRight,
                                     child: Padding(
-                                      padding: const EdgeInsets.only(right: 26),
+                                      padding: EdgeInsets.only(right: 26),
                                       child: Icon(
                                         Icons.delete,
                                         color: AppColor.greyColorText,

@@ -58,7 +58,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '531748173665',
     projectId: 'smartech-app',
     storageBucket: 'smartech-app.appspot.com',
-    iosClientId: '531748173665-t9939r7v38cq2d660duo06dt5o3be3lk.apps.googleusercontent.com',
+    iosClientId:
+        '531748173665-t9939r7v38cq2d660duo06dt5o3be3lk.apps.googleusercontent.com',
     iosBundleId: 'com.netcore.SmartechApp',
   );
 }

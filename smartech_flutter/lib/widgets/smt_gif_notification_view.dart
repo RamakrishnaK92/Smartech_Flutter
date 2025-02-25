@@ -6,13 +6,13 @@ import 'package:smartech_appinbox/model/smt_appinbox_model.dart';
 
 class GIFNotificationView extends StatelessWidget {
   final SMTAppInboxMessage inbox;
-  const GIFNotificationView({Key? key, required this.inbox}) : super(key: key);
+  const GIFNotificationView({super.key, required this.inbox});
   @override
   Widget build(BuildContext context) {
     return Card(
       elevation: 4,
       child: Padding(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -20,28 +20,28 @@ class GIFNotificationView extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: Text(
                 inbox.publishedDate!.getTimeAndDayCount(),
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 12,
                     color: AppColor.greyColorText,
                     fontWeight: FontWeight.w400),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             htmlText(inbox.title),
             if (inbox.subtitle.toString() != "") htmlText(inbox.subtitle),
             htmlText(inbox.body),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             inbox.mediaUrl != ""
                 ? Center(
-                    child: Container(
+                    child: SizedBox(
                       width: MediaQuery.of(context).size.width - 26,
                       child: CachedNetworkImage(
                         fit: BoxFit.fill,
-                        placeholder: (context, url) => Center(
+                        placeholder: (context, url) => const Center(
                           child: CupertinoActivityIndicator(),
                         ),
                         imageUrl: inbox.mediaUrl.toString(),

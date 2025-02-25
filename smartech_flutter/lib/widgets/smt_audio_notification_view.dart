@@ -7,8 +7,7 @@ import 'package:smartech_appinbox/model/smt_appinbox_model.dart';
 
 class SMTAudioNotificationView extends StatefulWidget {
   final SMTAppInboxMessage inbox;
-  const SMTAudioNotificationView({Key? key, required this.inbox})
-      : super(key: key);
+  const SMTAudioNotificationView({super.key, required this.inbox});
 
   @override
   State<SMTAudioNotificationView> createState() =>
@@ -21,7 +20,7 @@ class _SMTAudioNotificationViewState extends State<SMTAudioNotificationView>
   @override
   void initState() {
     super.initState();
-    print("audio url " + widget.inbox.mediaUrl.toString());
+    print("audio url ${widget.inbox.mediaUrl}");
     _init();
   }
 
@@ -67,7 +66,7 @@ class _SMTAudioNotificationViewState extends State<SMTAudioNotificationView>
     return Card(
       elevation: 4,
       child: Padding(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -75,20 +74,20 @@ class _SMTAudioNotificationViewState extends State<SMTAudioNotificationView>
               alignment: Alignment.centerRight,
               child: Text(
                 widget.inbox.publishedDate!.getTimeAndDayCount(),
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 12,
                     color: AppColor.greyColorText,
                     fontWeight: FontWeight.w400),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             htmlText(widget.inbox.title),
             if (widget.inbox.subtitle.toString() != "")
               htmlText(widget.inbox.subtitle),
             htmlText(widget.inbox.body),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             ControlButtons(_player),
@@ -118,7 +117,7 @@ class _SMTAudioNotificationViewState extends State<SMTAudioNotificationView>
 class ControlButtons extends StatelessWidget {
   final AudioPlayer player;
 
-  const ControlButtons(this.player, {Key? key}) : super(key: key);
+  const ControlButtons(this.player, {super.key});
 
   @override
   Widget build(BuildContext context) {

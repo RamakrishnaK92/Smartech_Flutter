@@ -7,8 +7,7 @@ import 'package:video_player/video_player.dart';
 class VideoPlayerDialog extends StatefulWidget {
   final String? videoUrl;
 
-  const VideoPlayerDialog({Key? key, @required this.videoUrl})
-      : super(key: key);
+  const VideoPlayerDialog({super.key, @required this.videoUrl});
 
   @override
   _VideoPlayerDialogState createState() => _VideoPlayerDialogState();
@@ -68,7 +67,7 @@ class _VideoPlayerDialogState extends State<VideoPlayerDialog> {
           shape: BoxShape.rectangle,
           color: Colors.white,
           borderRadius: BorderRadius.circular(15),
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               color: Color.fromRGBO(0, 0, 0, 0.1),
               blurRadius: 30,
@@ -85,7 +84,7 @@ class _VideoPlayerDialogState extends State<VideoPlayerDialog> {
               ? Chewie(
                   controller: _chewieController!,
                 )
-              : CupertinoActivityIndicator(),
+              : const CupertinoActivityIndicator(),
         ),
       ),
     );

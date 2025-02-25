@@ -27,7 +27,8 @@ typedef NS_ENUM(NSUInteger, BackendBaseURLType) {
     BackendBaseURLTypeAppInbox = 4,
     BackendBaseURLTypeCategory = 5,
     BackendBaseURLTypeListSegment = 6,
-    BackendBaseURLTypeGeofences = 7
+    BackendBaseURLTypeGeofences = 7,
+    BackendBaseURLTypeAddTestDevice = 8
 };
 
 
@@ -43,6 +44,7 @@ typedef NS_ENUM(NSUInteger, BackendBaseURLType) {
 @property (nonatomic, readonly, copy) NSURL *baseInboxURL;
 @property (nonatomic, readonly, copy) NSURL *listSegmentURL;
 @property (nonatomic, readonly, copy) NSURL *geofencesURL;
+@property (nonatomic, readonly, copy) NSURL *addTestDeviceURL;
 
 /**
  @brief Returns the global SMTBackendConfiguration instance.

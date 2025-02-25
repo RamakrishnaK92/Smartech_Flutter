@@ -5,8 +5,7 @@ import 'package:smartech_appinbox/model/smt_appinbox_model.dart';
 
 class SMTVideoNotificationView extends StatefulWidget {
   final SMTAppInboxMessage inbox;
-  const SMTVideoNotificationView({Key? key, required this.inbox})
-      : super(key: key);
+  const SMTVideoNotificationView({super.key, required this.inbox});
 
   @override
   State<SMTVideoNotificationView> createState() =>
@@ -27,7 +26,7 @@ class _SMTVideoNotificationViewState extends State<SMTVideoNotificationView> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.all(12),
+            padding: const EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -35,20 +34,20 @@ class _SMTVideoNotificationViewState extends State<SMTVideoNotificationView> {
                   alignment: Alignment.centerRight,
                   child: Text(
                     widget.inbox.publishedDate!.getTimeAndDayCount(),
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 12,
                         color: AppColor.greyColorText,
                         fontWeight: FontWeight.w400),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 htmlText(widget.inbox.title),
                 if (widget.inbox.subtitle.toString() != "")
                   htmlText(widget.inbox.subtitle),
                 htmlText(widget.inbox.body),
-                SizedBox(
+                const SizedBox(
                   height: 8,
                 ),
                 InkWell(
@@ -64,11 +63,11 @@ class _SMTVideoNotificationViewState extends State<SMTVideoNotificationView> {
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                      borderRadius: const BorderRadius.all(Radius.circular(8)),
                       color: AppColor.greyColorText.withOpacity(0.3),
                     ),
                     height: MediaQuery.of(context).size.height / 5,
-                    child: Icon(
+                    child: const Icon(
                       Icons.play_circle_outline_outlined,
                       size: 66,
                     ),
